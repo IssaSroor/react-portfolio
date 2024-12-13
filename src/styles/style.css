@@ -1,0 +1,280 @@
+/* General Reset and Body Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Modern font */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
+}
+
+/* Navigation Styles */
+.div-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #61dafb; /* Dark header */
+    padding: 20px;
+}
+
+.logo-div img {
+    height: 50px; /* Logo height */
+}
+
+.list-div {
+    flex-grow: 1;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.list-items {
+    margin-left: 20px; /* Space between menu items */
+}
+
+.list-items a {
+    color: #333; /* React blue */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+.list-items a:hover {
+    color: #21a1f1; /* Lighter blue on hover */
+}
+
+/* Hero Section Styles */
+.div-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #e9ecef; /* White background */
+}
+
+.per-Image img {
+    border-radius: 50%; /* Circular image */
+    width: 250px; /* Image size */
+}
+
+.intro {
+    text-align: left;
+}
+
+.intro h1 {
+    font-size: 2.5em; /* Large heading */
+}
+
+.icon {
+    margin-top: 20px; /* Space above icons */
+}
+
+.icon-frame {
+    background: none; /* No background for buttons */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+    margin-right: 10px; /* Space between icons */
+    font-size: 24px; /* Icon size */
+}
+
+/* About Section Styles */
+.div-about {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-header h1 {
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.about-body p {
+    max-width: 600px; /* Limit paragraph width */
+    margin: 0 auto; /* Center paragraph */
+}
+
+.btn-more {
+    background-color: #61dafb; /* Button color */
+    color: #fff; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background change */
+    margin-top: 5%;
+}
+
+.btn-more:hover {
+    background-color: #21a1f1; /* Lighter button on hover */
+}
+
+/* Skills Section Styles */
+.parent-two {
+    padding: 50px;
+    background-color: #e9ecef; /* Light gray background */
+    text-align: center;
+}
+
+.skills-title h2 {
+    margin-bottom: 30px; /* Space below title */
+}
+
+.skills-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+}
+
+.skills-items img{
+    width: 100px;
+}
+
+.skills-items div {
+    background: #fff; /* Card background */
+    padding-top: 10%;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Projects Section Styles */
+.parent-three {
+    padding: 50px;
+    background-color: #fff; /* White background */
+}
+
+.projects-title h2 {
+    text-align: center; /* Center title */
+    margin-bottom: 30px;
+}
+
+.projects-items {
+    display: flex;
+    gap: 20px; /* Space between items */
+}
+
+.project-item {
+    background: #f4f4f4; /* Card background */
+    padding: 20px; /* Padding inside card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.project-item img{
+    width: 100%;
+    height: 200px;
+}
+
+.project-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-item-btn {
+    background-color: #61dafb; /* Button color */
+    color: #fff; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background change */
+    margin-top: 10px;
+}
+
+.project-item-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.project-item-btn:hover {
+    background-color: #21a1f1; /* Lighter button on hover */
+}
+
+/* Contact Section Styles */
+.parent-four {
+    padding: 50px;
+    background-color: #e9ecef; /* Light gray background */
+}
+
+.contact-me-title h2 {
+    text-align: center; /* Center title */
+    margin-bottom: 30px;
+}
+
+.contact-me-form {
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+    max-width: 600px; /* Max width of form */
+    margin: 0 auto; /* Center form */
+}
+
+.contact-me-form input,
+.contact-me-form textarea {
+    margin-bottom: 15px; /* Space below inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.contact-me-form button {
+    background-color: #61dafb; /* Button color */
+    color: #fff; /* Text color */
+    border: none; /* No border */
+    padding: 10px; /* Padding */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background change */
+}
+
+.contact-me-form button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.contact-me-form button:hover {
+    background-color: #21a1f1; /* Lighter button on hover */
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #282c34; /* Dark footer */
+    color: #fff; /* White text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .div-hero {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center; /* Center elements */
+    }
+
+    .div-nav {
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .list {
+        flex-direction: row; /* Stack menu items vertically */
+        align-items: flex-start; /* Align items to the left */
+        margin-top: 10px; /* Space above menu */
+    }
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+  }
+  
