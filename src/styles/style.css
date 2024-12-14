@@ -76,16 +76,25 @@ body {
   font-size: 2.5em;
 }
 
-.icon {
+.social-links {
   margin-top: 20px;
 }
 
-.icon-frame {
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin-right: 10px;
-  font-size: 24px;
+.linkedin-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #0e76a8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.linkedin-link i {
+  margin-right: 8px;
+}
+
+.linkedin-link:hover {
+  color: #005582;
 }
 
 /* About Section Styles */
