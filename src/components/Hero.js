@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/style.css';
 
+
 const Hero = () => (
   <div className="div-hero">
     <div className="per-Image">
